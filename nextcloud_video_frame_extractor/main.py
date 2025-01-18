@@ -1,15 +1,11 @@
 from webdav3.client import Client
 from tempfile import NamedTemporaryFile
-from dotenv import load_dotenv
 import os
 from urllib.parse import urlparse
 from tempfile import NamedTemporaryFile
 import subprocess
-import sys
 import sqlite3
 
-
-load_dotenv()
 
 def get_client():
     options = {
